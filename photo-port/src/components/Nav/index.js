@@ -11,9 +11,6 @@ function Nav(props) {
   } = props;
 
 
-  const handleClick = (item) => {
-    return item;
-  };
 
   return (
     <header className="flex-row px-1">
@@ -29,7 +26,8 @@ function Nav(props) {
               About me
             </a>
           </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>            <span onClick={() => setContactSelected(true)}>
+          <li className={`mx-2 ${contactSelected && 'navActive'}`}>            
+          <span onClick={() => setContactSelected(true)}>
               Contact
             </span>
           </li>
